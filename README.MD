@@ -32,6 +32,7 @@ docker-compose up
 
 ### Executing program
 **Creating a key=value**
+
 Request:
 ```
 curl --location 'http://127.0.0.1:8080/api/key' \
@@ -55,6 +56,7 @@ Status code: `201 CREATED`
 
 
 **Getting the key value**
+
 Request:
 ```
 curl --location 'http://127.0.0.1:8080/api/key/languages' \
@@ -74,6 +76,7 @@ Response:
 Status code: `200 OK`
 
 **Updating the key=new_value**
+
 Request:
 ```
 curl --location --request PUT 'http://127.0.0.1:8080/api/key/languages' \
