@@ -31,7 +31,7 @@ docker-compose up
 ```
 
 ### Executing program
-**Creating a key=value**
+1. **Creating a key=value**
 
 Request:
 ```
@@ -55,7 +55,7 @@ Response:
 Status code: `201 CREATED`
 
 
-**Getting the key value**
+2. **Getting the key value**
 
 Request:
 ```
@@ -75,7 +75,7 @@ Response:
 ```
 Status code: `200 OK`
 
-**Updating the key=new_value**
+3. **Updating the key=new_value**
 
 Request:
 ```
