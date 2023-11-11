@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  mongodb:
+    image: mongo
+    ports:
+    - 27017:27017
+    volumes:
+    - ./app:/data/db
+    environment:
+    - MONGO_URI=mongodb://localhost:27017/myDatabase
+
+  python-app:
+    build: .
+    command: python app.py
+    volumes:
+    - ./app:/data/app
+    ports:
+    - 8080:8080
+    depends_on:
+    - mongodb
